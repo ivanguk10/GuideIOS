@@ -10,8 +10,7 @@ import SwiftUI
 struct HomeScreen: View {
     
     var body: some View {
-        
-//        NavigationView {
+        NavigationView {
             
             TabView {
                 MapScreen()
@@ -19,19 +18,21 @@ struct HomeScreen: View {
                         Image(systemName: "map")
                         Text("Map")
                     }
+                    .navigationBarHidden(true).navigationBarTitle("")
                 Text("Test")
                     .tabItem {
                         Image(systemName: "pencil.and.outline")
                         Text("Test")
-                    }
+                    }.navigationBarHidden(true).navigationBarTitle("")
                 Text("User")
                     .tabItem {
                         Image(systemName: "person")
                         Text("User")
-                    }
-            }.navigationBarHidden(true)
-//        }.navigationBarHidden(true)
-//            .navigationTitle("")
+                    }.navigationBarHidden(true).navigationBarTitle("")
+            }
+        }
+        .navigationBarHidden(true)
+        .navigationTitle("")
     }
 }
 

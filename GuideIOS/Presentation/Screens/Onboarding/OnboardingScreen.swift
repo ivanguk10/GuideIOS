@@ -10,7 +10,7 @@ import SwiftUI
 struct OnboardingScreen: View {
     
     @ObservedObject var vm: OnboardingViewModel
-//    @EnvironmentObject private var navigation: Navigation
+    @EnvironmentObject private var navigation: Navigation
     
     let label: String = "Already have an account? Login"
 
@@ -20,7 +20,7 @@ struct OnboardingScreen: View {
     
     var body: some View {
         
-        NavigationView {
+//        NavigationView {
             GeometryReader { geo in
                 VStack {
                     Image("Onboarding")
@@ -52,32 +52,31 @@ struct OnboardingScreen: View {
                         .background(Color.pink)
                         .clipShape(RoundedRectangle(cornerRadius: 16))
                     }.padding(.top, 16)
-                    
-                    NavigationLink(destination: SignInScreen(vm: SignInViewModel()), isActive: $vm.isNavigateToSignIn
-                    ) {
-                        SignInScreen(vm: SignInViewModel())
-                    }.frame(width: 0, height: 0)
-                    .hidden()
-                    
+
                     Spacer()
-                    Button() {
+                    Button(action: {
                         vm.navigateToLogin()
-                    } label: {
-                        NavigationLink(destination: LoginScreen(), isActive: $vm.isNavigateToLogIn) {
-                            HStack {
-                                Text(loginArray[0] + "?")
-                                    .foregroundColor(.black)
-                                    .font(.system(size: 16).weight(.light))
-                                    + Text(loginArray[1])
-                                    .foregroundColor(.pink)
-                                    .font(.system(size: 16).weight(.light))
-                            }.padding(.bottom, 8)
-                        }
-                    }
-            
+                    }, label: {
+                        HStack {
+                            Text(loginArray[0] + "?")
+                                .foregroundColor(.black)
+                                .font(.system(size: 16).weight(.light))
+                                + Text(loginArray[1])
+                                .foregroundColor(.pink)
+                                .font(.system(size: 16).weight(.light))
+                        }.padding(.bottom, 8)
+                    })
                 }
                 .navigationBarHidden(true)
             }.padding(.horizontal, 16)
+//        }
+        .onReceive(vm.$isNavigateToLogIn) {
+            guard $0 else { return }
+            navigation.pushView(LoginScreen())
+        }
+        .onReceive(vm.$isNavigateToSignIn) {
+            guard $0 else { return }
+            navigation.pushView(SignInScreen(vm: SignInViewModel()))
         }
     }
 }

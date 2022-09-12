@@ -15,7 +15,13 @@ struct MapScreen: View {
     var body: some View {
         VStack {
             Map(coordinateRegion: $region)
-        }.navigationBarHidden(true)
+            
+            Button {
+                
+            } label: {
+                Image("")
+            }.background(Color.pink)
+        }
     }
 }
 
