@@ -13,13 +13,6 @@
 		5235A1CE28C5E1D800052156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5235A1CD28C5E1D800052156 /* LaunchScreen.storyboard */; };
 		5235A1D328C5F5BB00052156 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235A1D228C5F5BB00052156 /* HomeScreen.swift */; };
 		5235A1D528C6199B00052156 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235A1D428C6199B00052156 /* MapScreen.swift */; };
-		5256065628CB36FB00339549 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5256064E28CB36FB00339549 /* Navigation.swift */; };
-		5256065728CB36FB00339549 /* NavigationBarTitleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5256064F28CB36FB00339549 /* NavigationBarTitleConfiguration.swift */; };
-		5256065828CB36FB00339549 /* UIViewController+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5256065128CB36FB00339549 /* UIViewController+Hierarchy.swift */; };
-		5256065928CB36FB00339549 /* View+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5256065228CB36FB00339549 /* View+Modifiers.swift */; };
-		5256065A28CB36FB00339549 /* TitleDisplayMode+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5256065328CB36FB00339549 /* TitleDisplayMode+UIKit.swift */; };
-		5256065B28CB36FB00339549 /* DestinationHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5256065428CB36FB00339549 /* DestinationHostingController.swift */; };
-		5256065C28CB36FB00339549 /* WindowReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5256065528CB36FB00339549 /* WindowReader.swift */; };
 		526DE57A28BD5E6700C3CACC /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE57928BD5E6700C3CACC /* OnboardingScreen.swift */; };
 		526DE57C28BE23BB00C3CACC /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE57B28BE23BB00C3CACC /* SignInScreen.swift */; };
 		526DE57F28BE2BD300C3CACC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE57E28BE2BD300C3CACC /* Colors.swift */; };
@@ -34,6 +27,13 @@
 		52DF4CE528B9033200D16115 /* GuideIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF4CE428B9033200D16115 /* GuideIOSTests.swift */; };
 		52DF4CEF28B9033200D16115 /* GuideIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF4CEE28B9033200D16115 /* GuideIOSUITests.swift */; };
 		52DF4CF128B9033200D16115 /* GuideIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF4CF028B9033200D16115 /* GuideIOSUITestsLaunchTests.swift */; };
+		52E7804528CF2567008F7BFB /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7803D28CF2567008F7BFB /* Navigation.swift */; };
+		52E7804628CF2567008F7BFB /* NavigationBarTitleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7803E28CF2567008F7BFB /* NavigationBarTitleConfiguration.swift */; };
+		52E7804728CF2567008F7BFB /* UIViewController+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7804028CF2567008F7BFB /* UIViewController+Hierarchy.swift */; };
+		52E7804828CF2567008F7BFB /* View+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7804128CF2567008F7BFB /* View+Modifiers.swift */; };
+		52E7804928CF2567008F7BFB /* TitleDisplayMode+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7804228CF2567008F7BFB /* TitleDisplayMode+UIKit.swift */; };
+		52E7804A28CF2567008F7BFB /* DestinationHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7804328CF2567008F7BFB /* DestinationHostingController.swift */; };
+		52E7804B28CF2567008F7BFB /* WindowReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7804428CF2567008F7BFB /* WindowReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,13 +61,6 @@
 		5235A1CD28C5E1D800052156 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5235A1D228C5F5BB00052156 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		5235A1D428C6199B00052156 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
-		5256064E28CB36FB00339549 /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
-		5256064F28CB36FB00339549 /* NavigationBarTitleConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarTitleConfiguration.swift; sourceTree = "<group>"; };
-		5256065128CB36FB00339549 /* UIViewController+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Hierarchy.swift"; sourceTree = "<group>"; };
-		5256065228CB36FB00339549 /* View+Modifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Modifiers.swift"; sourceTree = "<group>"; };
-		5256065328CB36FB00339549 /* TitleDisplayMode+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TitleDisplayMode+UIKit.swift"; sourceTree = "<group>"; };
-		5256065428CB36FB00339549 /* DestinationHostingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationHostingController.swift; sourceTree = "<group>"; };
-		5256065528CB36FB00339549 /* WindowReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowReader.swift; sourceTree = "<group>"; };
 		526DE57928BD5E6700C3CACC /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		526DE57B28BE23BB00C3CACC /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
 		526DE57E28BE2BD300C3CACC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -85,6 +78,13 @@
 		52DF4CEA28B9033200D16115 /* GuideIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuideIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DF4CEE28B9033200D16115 /* GuideIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideIOSUITests.swift; sourceTree = "<group>"; };
 		52DF4CF028B9033200D16115 /* GuideIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52E7803D28CF2567008F7BFB /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		52E7803E28CF2567008F7BFB /* NavigationBarTitleConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarTitleConfiguration.swift; sourceTree = "<group>"; };
+		52E7804028CF2567008F7BFB /* UIViewController+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Hierarchy.swift"; sourceTree = "<group>"; };
+		52E7804128CF2567008F7BFB /* View+Modifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Modifiers.swift"; sourceTree = "<group>"; };
+		52E7804228CF2567008F7BFB /* TitleDisplayMode+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TitleDisplayMode+UIKit.swift"; sourceTree = "<group>"; };
+		52E7804328CF2567008F7BFB /* DestinationHostingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationHostingController.swift; sourceTree = "<group>"; };
+		52E7804428CF2567008F7BFB /* WindowReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,29 +135,6 @@
 			children = (
 			);
 			path = Testing;
-			sourceTree = "<group>";
-		};
-		5256064D28CB36FB00339549 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				5256064E28CB36FB00339549 /* Navigation.swift */,
-				5256064F28CB36FB00339549 /* NavigationBarTitleConfiguration.swift */,
-				5256065028CB36FB00339549 /* Extensions */,
-				5256065428CB36FB00339549 /* DestinationHostingController.swift */,
-				5256065528CB36FB00339549 /* WindowReader.swift */,
-			);
-			name = Core;
-			path = ../../../../Downloads/Core;
-			sourceTree = "<group>";
-		};
-		5256065028CB36FB00339549 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				5256065128CB36FB00339549 /* UIViewController+Hierarchy.swift */,
-				5256065228CB36FB00339549 /* View+Modifiers.swift */,
-				5256065328CB36FB00339549 /* TitleDisplayMode+UIKit.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		526DE57528BD437800C3CACC /* Presentation */ = {
@@ -245,7 +222,7 @@
 		52DF4CCD28B9033000D16115 /* GuideIOS */ = {
 			isa = PBXGroup;
 			children = (
-				5256064D28CB36FB00339549 /* Core */,
+				52E7803C28CF2567008F7BFB /* Core */,
 				526DE57528BD437800C3CACC /* Presentation */,
 				5235A1CC28C5DED300052156 /* Info.plist */,
 				526DE58728BEA30000C3CACC /* NavigationHandler.swift */,
@@ -340,6 +317,28 @@
 			children = (
 			);
 			path = FindGuide;
+			sourceTree = "<group>";
+		};
+		52E7803C28CF2567008F7BFB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				52E7803D28CF2567008F7BFB /* Navigation.swift */,
+				52E7803E28CF2567008F7BFB /* NavigationBarTitleConfiguration.swift */,
+				52E7803F28CF2567008F7BFB /* Extensions */,
+				52E7804328CF2567008F7BFB /* DestinationHostingController.swift */,
+				52E7804428CF2567008F7BFB /* WindowReader.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		52E7803F28CF2567008F7BFB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52E7804028CF2567008F7BFB /* UIViewController+Hierarchy.swift */,
+				52E7804128CF2567008F7BFB /* View+Modifiers.swift */,
+				52E7804228CF2567008F7BFB /* TitleDisplayMode+UIKit.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,27 +476,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E7804A28CF2567008F7BFB /* DestinationHostingController.swift in Sources */,
 				526DE58828BEA30000C3CACC /* NavigationHandler.swift in Sources */,
 				52DF4CD828B9033200D16115 /* Persistence.swift in Sources */,
 				52DF4CD128B9033000D16115 /* ContentView.swift in Sources */,
+				52E7804628CF2567008F7BFB /* NavigationBarTitleConfiguration.swift in Sources */,
+				52E7804528CF2567008F7BFB /* Navigation.swift in Sources */,
 				526DE57A28BD5E6700C3CACC /* OnboardingScreen.swift in Sources */,
 				526DE57F28BE2BD300C3CACC /* Colors.swift in Sources */,
-				5256065C28CB36FB00339549 /* WindowReader.swift in Sources */,
 				52DF4CDB28B9033200D16115 /* GuideIOS.xcdatamodeld in Sources */,
 				5235A1D328C5F5BB00052156 /* HomeScreen.swift in Sources */,
-				5256065B28CB36FB00339549 /* DestinationHostingController.swift in Sources */,
+				52E7804B28CF2567008F7BFB /* WindowReader.swift in Sources */,
 				5235A1C728C1EAEE00052156 /* OnboardingViewModel.swift in Sources */,
 				5235A1CB28C248A700052156 /* SignInViewModel.swift in Sources */,
-				5256065A28CB36FB00339549 /* TitleDisplayMode+UIKit.swift in Sources */,
 				5235A1C928C200C900052156 /* LoginScreen.swift in Sources */,
 				5235A1D528C6199B00052156 /* MapScreen.swift in Sources */,
 				52DF4CCF28B9033000D16115 /* GuideIOSApp.swift in Sources */,
-				5256065828CB36FB00339549 /* UIViewController+Hierarchy.swift in Sources */,
-				5256065928CB36FB00339549 /* View+Modifiers.swift in Sources */,
-				5256065628CB36FB00339549 /* Navigation.swift in Sources */,
+				52E7804928CF2567008F7BFB /* TitleDisplayMode+UIKit.swift in Sources */,
+				52E7804728CF2567008F7BFB /* UIViewController+Hierarchy.swift in Sources */,
 				526DE57C28BE23BB00C3CACC /* SignInScreen.swift in Sources */,
 				526DE58328BE348400C3CACC /* SingInTextFieldStyle.swift in Sources */,
-				5256065728CB36FB00339549 /* NavigationBarTitleConfiguration.swift in Sources */,
+				52E7804828CF2567008F7BFB /* View+Modifiers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
