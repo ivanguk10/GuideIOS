@@ -11,22 +11,57 @@ import MapKit
 struct MapScreen: View {
     
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+    
+    @State var tracking: MapUserTrackingMode = .none
+    @ObservedObject var vm: MapViewModel
 
     var body: some View {
-        VStack {
-            Map(coordinateRegion: $region)
+        
+        ZStack(alignment: .bottom) {
+            Map(
+                coordinateRegion: $vm.region, interactionModes: MapInteractionModes.all, showsUserLocation: true, userTrackingMode: $tracking
+            ).onAppear {
+                vm.checkIfLocationServicesIsEnbled()
+            }
+
             
-            Button {
+            HStack {
+                CircleButton(action: {
+                    
+                }, imageView: {
+                    Image(systemName: "ellipsis")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 26, height: 26)
+                        .foregroundColor(Color.white)
+                })
                 
-            } label: {
-                Image("")
-            }.background(Color.pink)
+                Spacer()
+                
+                Button {
+                    
+                } label: {
+                    Image(systemName: "paperplane")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(Color.white)
+                        .padding(.trailing, 4)
+                        .padding(.top, 4)
+                        
+                }
+                .frame(width: 50, height: 50)
+                .background(Color.pink)
+                .clipShape(Circle())
+                .shadow(color: Color.gray, radius: 4)
+            }
+            .padding(.bottom, 24)
+            .padding(.horizontal, 16)
         }
     }
 }
 
 struct MapScreen_Previews: PreviewProvider {
     static var previews: some View {
-        MapScreen()
+        MapScreen(vm: MapViewModel())
     }
 }

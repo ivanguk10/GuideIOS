@@ -34,6 +34,8 @@
 		52E7804928CF2567008F7BFB /* TitleDisplayMode+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7804228CF2567008F7BFB /* TitleDisplayMode+UIKit.swift */; };
 		52E7804A28CF2567008F7BFB /* DestinationHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7804328CF2567008F7BFB /* DestinationHostingController.swift */; };
 		52E7804B28CF2567008F7BFB /* WindowReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7804428CF2567008F7BFB /* WindowReader.swift */; };
+		52E7804D28CF3E5D008F7BFB /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7804C28CF3E5D008F7BFB /* CircleButton.swift */; };
+		52E7804F28CF56FA008F7BFB /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7804E28CF56FA008F7BFB /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		52E7804228CF2567008F7BFB /* TitleDisplayMode+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TitleDisplayMode+UIKit.swift"; sourceTree = "<group>"; };
 		52E7804328CF2567008F7BFB /* DestinationHostingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationHostingController.swift; sourceTree = "<group>"; };
 		52E7804428CF2567008F7BFB /* WindowReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowReader.swift; sourceTree = "<group>"; };
+		52E7804C28CF3E5D008F7BFB /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		52E7804E28CF56FA008F7BFB /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				5235A1CD28C5E1D800052156 /* LaunchScreen.storyboard */,
+				52E7804C28CF3E5D008F7BFB /* CircleButton.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 				52DF4D0428B9092100D16115 /* FindGuide */,
 				52DF4D0328B9091900D16115 /* GuideActivity */,
 				5235A1D428C6199B00052156 /* MapScreen.swift */,
+				52E7804E28CF56FA008F7BFB /* MapViewModel.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -487,12 +493,14 @@
 				52DF4CDB28B9033200D16115 /* GuideIOS.xcdatamodeld in Sources */,
 				5235A1D328C5F5BB00052156 /* HomeScreen.swift in Sources */,
 				52E7804B28CF2567008F7BFB /* WindowReader.swift in Sources */,
+				52E7804F28CF56FA008F7BFB /* MapViewModel.swift in Sources */,
 				5235A1C728C1EAEE00052156 /* OnboardingViewModel.swift in Sources */,
 				5235A1CB28C248A700052156 /* SignInViewModel.swift in Sources */,
 				5235A1C928C200C900052156 /* LoginScreen.swift in Sources */,
 				5235A1D528C6199B00052156 /* MapScreen.swift in Sources */,
 				52DF4CCF28B9033000D16115 /* GuideIOSApp.swift in Sources */,
 				52E7804928CF2567008F7BFB /* TitleDisplayMode+UIKit.swift in Sources */,
+				52E7804D28CF3E5D008F7BFB /* CircleButton.swift in Sources */,
 				52E7804728CF2567008F7BFB /* UIViewController+Hierarchy.swift in Sources */,
 				526DE57C28BE23BB00C3CACC /* SignInScreen.swift in Sources */,
 				526DE58328BE348400C3CACC /* SingInTextFieldStyle.swift in Sources */,
@@ -660,6 +668,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GuideIOS/Info.plist;
 				"INFOPLIST_FILE[sdk=*]" = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to your current location?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -691,6 +700,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GuideIOS/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to your current location?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

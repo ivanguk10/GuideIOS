@@ -13,7 +13,7 @@ struct HomeScreen: View {
         NavigationView {
             
             TabView {
-                MapScreen()
+                MapScreen(vm: MapViewModel())
                     .tabItem {
                         Image(systemName: "map")
                         Text("Map")

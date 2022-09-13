@@ -10,9 +10,6 @@ final class Navigation: ObservableObject {
     @Published var isTabBarHidden = false
     let window: UIWindow?
 
-    // MARK: - Private Properties
-    // MARK: - Life Cycle
-
     init(window: UIWindow?) {
         self.window = window
     }
