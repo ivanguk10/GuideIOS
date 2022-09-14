@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52293CAA28D21D4A00595902 /* ToursListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52293CA928D21D4A00595902 /* ToursListScreen.swift */; };
 		5235A1C728C1EAEE00052156 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235A1C628C1EAEE00052156 /* OnboardingViewModel.swift */; };
 		5235A1C928C200C900052156 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235A1C828C200C900052156 /* LoginScreen.swift */; };
 		5235A1CB28C248A700052156 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235A1CA28C248A700052156 /* SignInViewModel.swift */; };
@@ -18,6 +19,7 @@
 		526DE57F28BE2BD300C3CACC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE57E28BE2BD300C3CACC /* Colors.swift */; };
 		526DE58328BE348400C3CACC /* SingInTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE58228BE348400C3CACC /* SingInTextFieldStyle.swift */; };
 		526DE58828BEA30000C3CACC /* NavigationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE58728BEA30000C3CACC /* NavigationHandler.swift */; };
+		529BE66828D1F17200538850 /* RoundedImageTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529BE66728D1F17200538850 /* RoundedImageTextButton.swift */; };
 		52DF4CCF28B9033000D16115 /* GuideIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF4CCE28B9033000D16115 /* GuideIOSApp.swift */; };
 		52DF4CD128B9033000D16115 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF4CD028B9033000D16115 /* ContentView.swift */; };
 		52DF4CD328B9033200D16115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DF4CD228B9033200D16115 /* Assets.xcassets */; };
@@ -56,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52293CA928D21D4A00595902 /* ToursListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursListScreen.swift; sourceTree = "<group>"; };
 		5235A1C628C1EAEE00052156 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		5235A1C828C200C900052156 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		5235A1CA28C248A700052156 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		526DE57E28BE2BD300C3CACC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		526DE58228BE348400C3CACC /* SingInTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInTextFieldStyle.swift; sourceTree = "<group>"; };
 		526DE58728BEA30000C3CACC /* NavigationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHandler.swift; sourceTree = "<group>"; };
+		529BE66728D1F17200538850 /* RoundedImageTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextButton.swift; sourceTree = "<group>"; };
 		52DF4CCB28B9033000D16115 /* GuideIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuideIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DF4CCE28B9033000D16115 /* GuideIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideIOSApp.swift; sourceTree = "<group>"; };
 		52DF4CD028B9033000D16115 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 		5235A1D128C5F59100052156 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
+				52293CA928D21D4A00595902 /* ToursListScreen.swift */,
 			);
 			path = Testing;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 			children = (
 				5235A1CD28C5E1D800052156 /* LaunchScreen.storyboard */,
 				52E7804C28CF3E5D008F7BFB /* CircleButton.swift */,
+				529BE66728D1F17200538850 /* RoundedImageTextButton.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -486,6 +492,7 @@
 				526DE58828BEA30000C3CACC /* NavigationHandler.swift in Sources */,
 				52DF4CD828B9033200D16115 /* Persistence.swift in Sources */,
 				52DF4CD128B9033000D16115 /* ContentView.swift in Sources */,
+				529BE66828D1F17200538850 /* RoundedImageTextButton.swift in Sources */,
 				52E7804628CF2567008F7BFB /* NavigationBarTitleConfiguration.swift in Sources */,
 				52E7804528CF2567008F7BFB /* Navigation.swift in Sources */,
 				526DE57A28BD5E6700C3CACC /* OnboardingScreen.swift in Sources */,
@@ -495,6 +502,7 @@
 				52E7804B28CF2567008F7BFB /* WindowReader.swift in Sources */,
 				52E7804F28CF56FA008F7BFB /* MapViewModel.swift in Sources */,
 				5235A1C728C1EAEE00052156 /* OnboardingViewModel.swift in Sources */,
+				52293CAA28D21D4A00595902 /* ToursListScreen.swift in Sources */,
 				5235A1CB28C248A700052156 /* SignInViewModel.swift in Sources */,
 				5235A1C928C200C900052156 /* LoginScreen.swift in Sources */,
 				5235A1D528C6199B00052156 /* MapScreen.swift in Sources */,

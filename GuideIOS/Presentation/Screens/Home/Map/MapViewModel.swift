@@ -11,12 +11,21 @@ import MapKit
 
 final class MapViewModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     
+    @Published var isMenuOpened = false
+    
+    
+    
     @Published var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0),
         span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
     )
     
     private var locationManager: CLLocationManager?
+    
+    
+    func menuClicked() {
+        isMenuOpened = !isMenuOpened
+    }
     
     func checkIfLocationServicesIsEnbled() {
         if CLLocationManager.locationServicesEnabled() {

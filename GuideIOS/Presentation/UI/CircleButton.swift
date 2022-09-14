@@ -17,10 +17,15 @@ struct CircleButton<Content: View>: View {
         Button {
             action()
         } label: {
-            imageView()
+            ZStack {
+                Text("")
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                imageView()
+            }
         }
         .frame(width: 50, height: 50)
-        .background(Color.pink)
+        .background(Color.white)
         .clipShape(Circle())
         .shadow(color: Color.gray, radius: 4)
     }
@@ -34,7 +39,7 @@ struct CircleButton_Previews: PreviewProvider {
             Image(systemName: "paperplane")
                 .resizable()
                 .frame(width: 30, height: 30)
-                .foregroundColor(Color.white)
+                .foregroundColor(Color.pink)
                 .padding(.trailing, 4)
                 .padding(.top, 4)
         })
