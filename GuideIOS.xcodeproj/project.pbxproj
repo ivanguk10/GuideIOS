@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		52293CAA28D21D4A00595902 /* ToursListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52293CA928D21D4A00595902 /* ToursListScreen.swift */; };
+		52293CAC28D30C9200595902 /* TourItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52293CAB28D30C9200595902 /* TourItem.swift */; };
+		52293CAF28D31C3200595902 /* TourImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52293CAE28D31C3200595902 /* TourImageHelper.swift */; };
+		52293CB228D31FE500595902 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52293CB128D31FE500595902 /* StringExt.swift */; };
+		52293CB428D3292600595902 /* TourListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52293CB328D3292600595902 /* TourListViewModel.swift */; };
 		5235A1C728C1EAEE00052156 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235A1C628C1EAEE00052156 /* OnboardingViewModel.swift */; };
 		5235A1C928C200C900052156 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235A1C828C200C900052156 /* LoginScreen.swift */; };
 		5235A1CB28C248A700052156 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235A1CA28C248A700052156 /* SignInViewModel.swift */; };
 		5235A1CE28C5E1D800052156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5235A1CD28C5E1D800052156 /* LaunchScreen.storyboard */; };
 		5235A1D328C5F5BB00052156 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235A1D228C5F5BB00052156 /* HomeScreen.swift */; };
 		5235A1D528C6199B00052156 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235A1D428C6199B00052156 /* MapScreen.swift */; };
+		52560F5428D46A8400D40CCC /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52560F5328D46A8400D40CCC /* Tour.swift */; };
 		526DE57A28BD5E6700C3CACC /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE57928BD5E6700C3CACC /* OnboardingScreen.swift */; };
 		526DE57C28BE23BB00C3CACC /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE57B28BE23BB00C3CACC /* SignInScreen.swift */; };
 		526DE57F28BE2BD300C3CACC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE57E28BE2BD300C3CACC /* Colors.swift */; };
 		526DE58328BE348400C3CACC /* SingInTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE58228BE348400C3CACC /* SingInTextFieldStyle.swift */; };
-		526DE58828BEA30000C3CACC /* NavigationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE58728BEA30000C3CACC /* NavigationHandler.swift */; };
 		529BE66828D1F17200538850 /* RoundedImageTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529BE66728D1F17200538850 /* RoundedImageTextButton.swift */; };
 		52DF4CCF28B9033000D16115 /* GuideIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF4CCE28B9033000D16115 /* GuideIOSApp.swift */; };
 		52DF4CD128B9033000D16115 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF4CD028B9033000D16115 /* ContentView.swift */; };
@@ -59,6 +63,10 @@
 
 /* Begin PBXFileReference section */
 		52293CA928D21D4A00595902 /* ToursListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursListScreen.swift; sourceTree = "<group>"; };
+		52293CAB28D30C9200595902 /* TourItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourItem.swift; sourceTree = "<group>"; };
+		52293CAE28D31C3200595902 /* TourImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourImageHelper.swift; sourceTree = "<group>"; };
+		52293CB128D31FE500595902 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		52293CB328D3292600595902 /* TourListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListViewModel.swift; sourceTree = "<group>"; };
 		5235A1C628C1EAEE00052156 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		5235A1C828C200C900052156 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		5235A1CA28C248A700052156 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
@@ -66,11 +74,11 @@
 		5235A1CD28C5E1D800052156 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5235A1D228C5F5BB00052156 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		5235A1D428C6199B00052156 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		52560F5328D46A8400D40CCC /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
 		526DE57928BD5E6700C3CACC /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		526DE57B28BE23BB00C3CACC /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
 		526DE57E28BE2BD300C3CACC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		526DE58228BE348400C3CACC /* SingInTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInTextFieldStyle.swift; sourceTree = "<group>"; };
-		526DE58728BEA30000C3CACC /* NavigationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHandler.swift; sourceTree = "<group>"; };
 		529BE66728D1F17200538850 /* RoundedImageTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextButton.swift; sourceTree = "<group>"; };
 		52DF4CCB28B9033000D16115 /* GuideIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuideIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DF4CCE28B9033000D16115 /* GuideIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideIOSApp.swift; sourceTree = "<group>"; };
@@ -120,6 +128,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52293CAD28D31C1200595902 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				52293CAE28D31C3200595902 /* TourImageHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		52293CB028D31FD700595902 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52293CB128D31FE500595902 /* StringExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		5235A1CF28C5F56900052156 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,13 +166,24 @@
 			isa = PBXGroup;
 			children = (
 				52293CA928D21D4A00595902 /* ToursListScreen.swift */,
+				52293CAB28D30C9200595902 /* TourItem.swift */,
+				52293CB328D3292600595902 /* TourListViewModel.swift */,
 			);
 			path = Testing;
+			sourceTree = "<group>";
+		};
+		52560F5228D46A7400D40CCC /* UiData */ = {
+			isa = PBXGroup;
+			children = (
+				52560F5328D46A8400D40CCC /* Tour.swift */,
+			);
+			path = UiData;
 			sourceTree = "<group>";
 		};
 		526DE57528BD437800C3CACC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				52293CAD28D31C1200595902 /* Helpers */,
 				52DF4CFE28B908ED00D16115 /* UI */,
 				526DE57728BD43BA00C3CACC /* Screens */,
 			);
@@ -165,6 +200,7 @@
 		526DE57728BD43BA00C3CACC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				52560F5228D46A7400D40CCC /* UiData */,
 				5235A1CF28C5F56900052156 /* Home */,
 				526DE57828BD5E3B00C3CACC /* Onboarding */,
 				52DF4D0028B908FF00D16115 /* SignIn */,
@@ -231,10 +267,10 @@
 		52DF4CCD28B9033000D16115 /* GuideIOS */ = {
 			isa = PBXGroup;
 			children = (
+				52293CB028D31FD700595902 /* Extensions */,
 				52E7803C28CF2567008F7BFB /* Core */,
 				526DE57528BD437800C3CACC /* Presentation */,
 				5235A1CC28C5DED300052156 /* Info.plist */,
-				526DE58728BEA30000C3CACC /* NavigationHandler.swift */,
 				526DE57D28BE2BC200C3CACC /* Resources */,
 				526DE57628BD43B100C3CACC /* Domain */,
 				52DF4CFD28B908E600D16115 /* Data */,
@@ -489,26 +525,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				52E7804A28CF2567008F7BFB /* DestinationHostingController.swift in Sources */,
-				526DE58828BEA30000C3CACC /* NavigationHandler.swift in Sources */,
 				52DF4CD828B9033200D16115 /* Persistence.swift in Sources */,
 				52DF4CD128B9033000D16115 /* ContentView.swift in Sources */,
 				529BE66828D1F17200538850 /* RoundedImageTextButton.swift in Sources */,
 				52E7804628CF2567008F7BFB /* NavigationBarTitleConfiguration.swift in Sources */,
 				52E7804528CF2567008F7BFB /* Navigation.swift in Sources */,
 				526DE57A28BD5E6700C3CACC /* OnboardingScreen.swift in Sources */,
+				52560F5428D46A8400D40CCC /* Tour.swift in Sources */,
 				526DE57F28BE2BD300C3CACC /* Colors.swift in Sources */,
 				52DF4CDB28B9033200D16115 /* GuideIOS.xcdatamodeld in Sources */,
 				5235A1D328C5F5BB00052156 /* HomeScreen.swift in Sources */,
 				52E7804B28CF2567008F7BFB /* WindowReader.swift in Sources */,
 				52E7804F28CF56FA008F7BFB /* MapViewModel.swift in Sources */,
 				5235A1C728C1EAEE00052156 /* OnboardingViewModel.swift in Sources */,
+				52293CAC28D30C9200595902 /* TourItem.swift in Sources */,
 				52293CAA28D21D4A00595902 /* ToursListScreen.swift in Sources */,
+				52293CAF28D31C3200595902 /* TourImageHelper.swift in Sources */,
 				5235A1CB28C248A700052156 /* SignInViewModel.swift in Sources */,
 				5235A1C928C200C900052156 /* LoginScreen.swift in Sources */,
 				5235A1D528C6199B00052156 /* MapScreen.swift in Sources */,
 				52DF4CCF28B9033000D16115 /* GuideIOSApp.swift in Sources */,
+				52293CB428D3292600595902 /* TourListViewModel.swift in Sources */,
 				52E7804928CF2567008F7BFB /* TitleDisplayMode+UIKit.swift in Sources */,
 				52E7804D28CF3E5D008F7BFB /* CircleButton.swift in Sources */,
+				52293CB228D31FE500595902 /* StringExt.swift in Sources */,
 				52E7804728CF2567008F7BFB /* UIViewController+Hierarchy.swift in Sources */,
 				526DE57C28BE23BB00C3CACC /* SignInScreen.swift in Sources */,
 				526DE58328BE348400C3CACC /* SingInTextFieldStyle.swift in Sources */,
