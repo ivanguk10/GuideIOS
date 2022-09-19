@@ -17,6 +17,12 @@ class TourListViewModel: ObservableObject {
         Tour(id: 7, city: "Barcelona", type: "Cultural", isSelected: false),
     ]
     
+    @Published var isNavigateToTest = false
+    
+    func navigateToTest() {
+        isNavigateToTest = true
+    }
+    
     func tourClicked(tourId: Int) {
         listOfTours = listOfTours.map { tour in
             var changedTour = tour

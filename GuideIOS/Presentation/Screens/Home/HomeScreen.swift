@@ -34,6 +34,7 @@ struct HomeScreen: View {
         }
         .navigationBarHidden(true)
         .navigationTitle("")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

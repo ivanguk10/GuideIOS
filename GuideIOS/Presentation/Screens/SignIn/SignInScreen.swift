@@ -13,6 +13,7 @@ struct SignInScreen: View {
     @State var text = ""
 
     @ObservedObject var vm: SignInViewModel
+    @EnvironmentObject var navigation: Navigation
     
     var body: some View {
         GeometryReader { geo in
@@ -53,16 +54,9 @@ struct SignInScreen: View {
                 
                 Spacer()
                 
-                Button {
+                RoundedTextButton(action: {
                     vm.signIn()
-                } label: {
-                    Text("Sign in")
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.pink)
-                        .clipShape(RoundedRectangle(cornerRadius: 16))
-                }
+                }, title: "Sign in")
             
                 NavigationLink(destination: HomeScreen(), isActive: $vm.isNavigateToHomeScreen) {
                     Text("")
@@ -73,6 +67,13 @@ struct SignInScreen: View {
         }
         .padding(.horizontal, 16)
         .padding(.bottom, 16)
+//        .onReceive(vm.$isNavigateToHomeScreen) {
+//            guard $0 else { return }
+//            navigation.pushView(
+//                HomeScreen()
+//                    .rootView(navigation: Navigation(window: window))
+//            )
+//        }
     }
 }
 

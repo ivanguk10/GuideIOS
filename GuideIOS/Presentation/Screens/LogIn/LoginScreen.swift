@@ -41,16 +41,10 @@ struct LoginScreen: View {
                     
                 Spacer()
                 
-                Button {
-                    self.mode.wrappedValue.dismiss()
-                } label: {
-                    Text("Log in")
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.pink)
-                        .clipShape(RoundedRectangle(cornerRadius: 16))
-                }
+                RoundedTextButton(action: {
+                    print("Log in clicked")
+                }, title: "Log in")
+            
             }
         }
         .padding(.horizontal, 16)

@@ -19,6 +19,10 @@
 		5235A1D328C5F5BB00052156 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235A1D228C5F5BB00052156 /* HomeScreen.swift */; };
 		5235A1D528C6199B00052156 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235A1D428C6199B00052156 /* MapScreen.swift */; };
 		52560F5428D46A8400D40CCC /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52560F5328D46A8400D40CCC /* Tour.swift */; };
+		52560F5628D46D3900D40CCC /* RoundedTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52560F5528D46D3900D40CCC /* RoundedTextButton.swift */; };
+		52560F5928D4824000D40CCC /* CurrentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52560F5828D4824000D40CCC /* CurrentTest.swift */; };
+		52560F5B28D4A1B500D40CCC /* CurrentTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52560F5A28D4A1B500D40CCC /* CurrentTestViewModel.swift */; };
+		52560F5D28D4A6F300D40CCC /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52560F5C28D4A6F300D40CCC /* AnswerView.swift */; };
 		526DE57A28BD5E6700C3CACC /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE57928BD5E6700C3CACC /* OnboardingScreen.swift */; };
 		526DE57C28BE23BB00C3CACC /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE57B28BE23BB00C3CACC /* SignInScreen.swift */; };
 		526DE57F28BE2BD300C3CACC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE57E28BE2BD300C3CACC /* Colors.swift */; };
@@ -75,6 +79,10 @@
 		5235A1D228C5F5BB00052156 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		5235A1D428C6199B00052156 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
 		52560F5328D46A8400D40CCC /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
+		52560F5528D46D3900D40CCC /* RoundedTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextButton.swift; sourceTree = "<group>"; };
+		52560F5828D4824000D40CCC /* CurrentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTest.swift; sourceTree = "<group>"; };
+		52560F5A28D4A1B500D40CCC /* CurrentTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTestViewModel.swift; sourceTree = "<group>"; };
+		52560F5C28D4A6F300D40CCC /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 		526DE57928BD5E6700C3CACC /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		526DE57B28BE23BB00C3CACC /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
 		526DE57E28BE2BD300C3CACC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -165,6 +173,7 @@
 		5235A1D128C5F59100052156 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
+				52560F5728D481C400D40CCC /* CurrentTest */,
 				52293CA928D21D4A00595902 /* ToursListScreen.swift */,
 				52293CAB28D30C9200595902 /* TourItem.swift */,
 				52293CB328D3292600595902 /* TourListViewModel.swift */,
@@ -178,6 +187,15 @@
 				52560F5328D46A8400D40CCC /* Tour.swift */,
 			);
 			path = UiData;
+			sourceTree = "<group>";
+		};
+		52560F5728D481C400D40CCC /* CurrentTest */ = {
+			isa = PBXGroup;
+			children = (
+				52560F5828D4824000D40CCC /* CurrentTest.swift */,
+				52560F5A28D4A1B500D40CCC /* CurrentTestViewModel.swift */,
+			);
+			path = CurrentTest;
 			sourceTree = "<group>";
 		};
 		526DE57528BD437800C3CACC /* Presentation */ = {
@@ -321,6 +339,8 @@
 				5235A1CD28C5E1D800052156 /* LaunchScreen.storyboard */,
 				52E7804C28CF3E5D008F7BFB /* CircleButton.swift */,
 				529BE66728D1F17200538850 /* RoundedImageTextButton.swift */,
+				52560F5528D46D3900D40CCC /* RoundedTextButton.swift */,
+				52560F5C28D4A6F300D40CCC /* AnswerView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -528,12 +548,15 @@
 				52DF4CD828B9033200D16115 /* Persistence.swift in Sources */,
 				52DF4CD128B9033000D16115 /* ContentView.swift in Sources */,
 				529BE66828D1F17200538850 /* RoundedImageTextButton.swift in Sources */,
+				52560F5B28D4A1B500D40CCC /* CurrentTestViewModel.swift in Sources */,
 				52E7804628CF2567008F7BFB /* NavigationBarTitleConfiguration.swift in Sources */,
 				52E7804528CF2567008F7BFB /* Navigation.swift in Sources */,
+				52560F5D28D4A6F300D40CCC /* AnswerView.swift in Sources */,
 				526DE57A28BD5E6700C3CACC /* OnboardingScreen.swift in Sources */,
 				52560F5428D46A8400D40CCC /* Tour.swift in Sources */,
 				526DE57F28BE2BD300C3CACC /* Colors.swift in Sources */,
 				52DF4CDB28B9033200D16115 /* GuideIOS.xcdatamodeld in Sources */,
+				52560F5628D46D3900D40CCC /* RoundedTextButton.swift in Sources */,
 				5235A1D328C5F5BB00052156 /* HomeScreen.swift in Sources */,
 				52E7804B28CF2567008F7BFB /* WindowReader.swift in Sources */,
 				52E7804F28CF56FA008F7BFB /* MapViewModel.swift in Sources */,
@@ -550,6 +573,7 @@
 				52E7804D28CF3E5D008F7BFB /* CircleButton.swift in Sources */,
 				52293CB228D31FE500595902 /* StringExt.swift in Sources */,
 				52E7804728CF2567008F7BFB /* UIViewController+Hierarchy.swift in Sources */,
+				52560F5928D4824000D40CCC /* CurrentTest.swift in Sources */,
 				526DE57C28BE23BB00C3CACC /* SignInScreen.swift in Sources */,
 				526DE58328BE348400C3CACC /* SingInTextFieldStyle.swift in Sources */,
 				52E7804828CF2567008F7BFB /* View+Modifiers.swift in Sources */,

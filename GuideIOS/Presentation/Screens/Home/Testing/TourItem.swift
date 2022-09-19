@@ -26,7 +26,7 @@ struct TourItem: View {
             } else {
                 Rectangle()
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .opacity(0.4)
+                    .opacity(0.3)
             }
             
             VStack {
@@ -57,7 +57,7 @@ struct TourItem: View {
         }
         .frame(maxWidth: .infinity, minHeight: 170, maxHeight: .infinity)
         .clipShape(RoundedRectangle(cornerRadius: 16))
-        .shadow(radius: 10)
+        .shadow(radius: 8)
     }
     
 }

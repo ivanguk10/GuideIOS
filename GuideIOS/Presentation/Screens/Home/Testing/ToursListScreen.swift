@@ -10,19 +10,34 @@ import SwiftUI
 struct ToursListScreen: View {
     
     @EnvironmentObject var vm: TourListViewModel
+    @EnvironmentObject private var navigation: Navigation
         
     private let gridItemLayout = [GridItem(.flexible(), spacing: 20), GridItem(.flexible(), spacing: 20)]
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: gridItemLayout, spacing: 20,  content: {
-                ForEach(vm.listOfTours, id: \.id) { tour in
-                    TourItem(tour: tour)
-                        .onTapGesture {
-                            vm.tourClicked(tourId: tour.id)
+        GeometryReader { geo in
+            VStack {
+                ScrollView {
+                    LazyVGrid(columns: gridItemLayout, spacing: 20,  content: {
+                        ForEach(vm.listOfTours, id: \.id) { tour in
+                            TourItem(tour: tour)
+                                .onTapGesture {
+                                    vm.tourClicked(tourId: tour.id)
+                                }
                         }
+                    })
                 }
-            }).padding(.horizontal)
+                Spacer()
+                RoundedTextButton(action: {
+                    vm.navigateToTest()
+                }, title: "Start test")
+                Spacer()
+            }
+            .frame(minHeight: geo.size.height)
+            .padding(.horizontal)
+        }.onReceive(vm.$isNavigateToTest) {
+            guard $0 else { return }
+            navigation.pushView(CurrentTest(vm: CurrentTestViewModel()))
         }
     }
 }
