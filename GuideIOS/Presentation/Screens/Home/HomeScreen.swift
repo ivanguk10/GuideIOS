@@ -19,7 +19,7 @@ struct HomeScreen: View {
                         Text("Map")
                     }
                     .navigationBarHidden(true).navigationBarTitle("")
-                ToursListScreen()
+                ToursListScreen(vm: TourListViewModel())
                     .environmentObject(TourListViewModel())
                     .tabItem {
                         Image(systemName: "pencil.and.outline")

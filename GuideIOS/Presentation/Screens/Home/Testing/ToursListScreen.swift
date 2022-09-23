@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ToursListScreen: View {
     
-    @EnvironmentObject var vm: TourListViewModel
+    @ObservedObject var vm: TourListViewModel
     @EnvironmentObject private var navigation: Navigation
         
     private let gridItemLayout = [GridItem(.flexible(), spacing: 20), GridItem(.flexible(), spacing: 20)]
@@ -46,14 +46,11 @@ struct ToursListScreen: View {
 
 struct ToursListScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ToursListScreen()
-            .environmentObject(TourListViewModel())
+        ToursListScreen(vm: TourListViewModel())
             .previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro"))
-        ToursListScreen()
-            .environmentObject(TourListViewModel())
+        ToursListScreen(vm: TourListViewModel())
             .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
-        ToursListScreen()
-            .environmentObject(TourListViewModel())
+        ToursListScreen(vm: TourListViewModel())
             .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
     }
 }

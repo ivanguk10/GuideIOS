@@ -9,68 +9,21 @@ import Foundation
 
 class CurrentTestViewModel: ObservableObject {
     
-    @Published var listOfQuestions: [Question] = [
-        Question(
-            question: "The first Minsk mention",
-            answers: [
-                Answer(answer: "1062", isCorrect: false, isSelected: false),
-                Answer(answer: "1064", isCorrect: false, isSelected: false),
-                Answer(answer: "1065", isCorrect: false, isSelected: false),
-                Answer(answer: "1067", isCorrect: true, isSelected: false)
-            ]
-        ),
-        Question(
-            question: "When Minsk became the Hero city",
-            answers: [
-                Answer(answer: "1971", isCorrect: false, isSelected: false),
-                Answer(answer: "1973", isCorrect: false, isSelected: false),
-                Answer(answer: "1974", isCorrect: true, isSelected: false),
-                Answer(answer: "1975", isCorrect: false, isSelected: false)
-            ]
-        ),
-        Question(
-            question: "When Minsk became the Hero city",
-            answers: [
-                Answer(answer: "1971", isCorrect: false, isSelected: false),
-                Answer(answer: "1973", isCorrect: false, isSelected: false),
-                Answer(answer: "1974", isCorrect: true, isSelected: false),
-                Answer(answer: "1975", isCorrect: false, isSelected: false)
-            ]
-        ),
-        Question(
-            question: "When Minsk became the Hero city",
-            answers: [
-                Answer(answer: "1971", isCorrect: false, isSelected: false),
-                Answer(answer: "1973", isCorrect: false, isSelected: false),
-                Answer(answer: "1974", isCorrect: true, isSelected: false),
-                Answer(answer: "1975", isCorrect: false, isSelected: false)
-            ]
-        ),
-        Question(
-            question: "When Minsk became the Hero city",
-            answers: [
-                Answer(answer: "1971", isCorrect: false, isSelected: false),
-                Answer(answer: "1973", isCorrect: false, isSelected: false),
-                Answer(answer: "1974", isCorrect: true, isSelected: false),
-                Answer(answer: "1975", isCorrect: false, isSelected: false)
-            ]
-        ),
-        Question(
-            question: "When Minsk became the Hero city",
-            answers: [
-                Answer(answer: "1971", isCorrect: false, isSelected: false),
-                Answer(answer: "1973", isCorrect: false, isSelected: false),
-                Answer(answer: "1974", isCorrect: true, isSelected: false),
-                Answer(answer: "1975", isCorrect: false, isSelected: false)
-            ]
-        )
-    ]
-    
+    @Published var listOfQuestions: [Question] = fakeQuestions
     @Published var currentQuestionIndex = 0
+    @Published var correctAnswersCount = 0
+    @Published var isNavigateToTestResult = false
         
     func nextClicked() {
+        let currentQuestion = listOfQuestions[currentQuestionIndex]
+        let correctAnswers = currentQuestion.answers.filter { $0.isCorrect && $0.isSelected }
+        correctAnswersCount += correctAnswers.count
+        print(correctAnswersCount)
+        
         if currentQuestionIndex + 1 != listOfQuestions.count {
             currentQuestionIndex += 1
+        } else {
+            navigateToTestReult()
         }
     }
     
@@ -82,6 +35,10 @@ class CurrentTestViewModel: ObservableObject {
             return changedAnswer
         }
         listOfQuestions[currentQuestionIndex] = currentQuestion
+    }
+    
+    private func navigateToTestReult() {
+        isNavigateToTestResult = true
     }
 }
 

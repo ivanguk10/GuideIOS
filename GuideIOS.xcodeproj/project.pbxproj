@@ -23,10 +23,14 @@
 		52560F5928D4824000D40CCC /* CurrentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52560F5828D4824000D40CCC /* CurrentTest.swift */; };
 		52560F5B28D4A1B500D40CCC /* CurrentTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52560F5A28D4A1B500D40CCC /* CurrentTestViewModel.swift */; };
 		52560F5D28D4A6F300D40CCC /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52560F5C28D4A6F300D40CCC /* AnswerView.swift */; };
+		52560F5F28D8785A00D40CCC /* FakeQuestionsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52560F5E28D8785900D40CCC /* FakeQuestionsData.swift */; };
+		52560F6128D88D9300D40CCC /* LinearProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52560F6028D88D9300D40CCC /* LinearProgressBar.swift */; };
 		526DE57A28BD5E6700C3CACC /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE57928BD5E6700C3CACC /* OnboardingScreen.swift */; };
 		526DE57C28BE23BB00C3CACC /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE57B28BE23BB00C3CACC /* SignInScreen.swift */; };
 		526DE57F28BE2BD300C3CACC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE57E28BE2BD300C3CACC /* Colors.swift */; };
 		526DE58328BE348400C3CACC /* SingInTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE58228BE348400C3CACC /* SingInTextFieldStyle.swift */; };
+		5286E82728DE421D00827747 /* TestResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286E82628DE421D00827747 /* TestResultScreen.swift */; };
+		5286E82928DE422B00827747 /* TestResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286E82828DE422B00827747 /* TestResultViewModel.swift */; };
 		529BE66828D1F17200538850 /* RoundedImageTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529BE66728D1F17200538850 /* RoundedImageTextButton.swift */; };
 		52DF4CCF28B9033000D16115 /* GuideIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF4CCE28B9033000D16115 /* GuideIOSApp.swift */; };
 		52DF4CD128B9033000D16115 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF4CD028B9033000D16115 /* ContentView.swift */; };
@@ -83,10 +87,14 @@
 		52560F5828D4824000D40CCC /* CurrentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTest.swift; sourceTree = "<group>"; };
 		52560F5A28D4A1B500D40CCC /* CurrentTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTestViewModel.swift; sourceTree = "<group>"; };
 		52560F5C28D4A6F300D40CCC /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
+		52560F5E28D8785900D40CCC /* FakeQuestionsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeQuestionsData.swift; sourceTree = "<group>"; };
+		52560F6028D88D9300D40CCC /* LinearProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearProgressBar.swift; sourceTree = "<group>"; };
 		526DE57928BD5E6700C3CACC /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		526DE57B28BE23BB00C3CACC /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
 		526DE57E28BE2BD300C3CACC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		526DE58228BE348400C3CACC /* SingInTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInTextFieldStyle.swift; sourceTree = "<group>"; };
+		5286E82628DE421D00827747 /* TestResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultScreen.swift; sourceTree = "<group>"; };
+		5286E82828DE422B00827747 /* TestResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultViewModel.swift; sourceTree = "<group>"; };
 		529BE66728D1F17200538850 /* RoundedImageTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageTextButton.swift; sourceTree = "<group>"; };
 		52DF4CCB28B9033000D16115 /* GuideIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuideIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DF4CCE28B9033000D16115 /* GuideIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideIOSApp.swift; sourceTree = "<group>"; };
@@ -173,10 +181,12 @@
 		5235A1D128C5F59100052156 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
+				5286E82528DE420700827747 /* TestResult */,
 				52560F5728D481C400D40CCC /* CurrentTest */,
 				52293CA928D21D4A00595902 /* ToursListScreen.swift */,
 				52293CAB28D30C9200595902 /* TourItem.swift */,
 				52293CB328D3292600595902 /* TourListViewModel.swift */,
+				52560F5E28D8785900D40CCC /* FakeQuestionsData.swift */,
 			);
 			path = Testing;
 			sourceTree = "<group>";
@@ -262,6 +272,15 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
+		5286E82528DE420700827747 /* TestResult */ = {
+			isa = PBXGroup;
+			children = (
+				5286E82628DE421D00827747 /* TestResultScreen.swift */,
+				5286E82828DE422B00827747 /* TestResultViewModel.swift */,
+			);
+			path = TestResult;
+			sourceTree = "<group>";
+		};
 		52DF4CC228B9033000D16115 = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +360,7 @@
 				529BE66728D1F17200538850 /* RoundedImageTextButton.swift */,
 				52560F5528D46D3900D40CCC /* RoundedTextButton.swift */,
 				52560F5C28D4A6F300D40CCC /* AnswerView.swift */,
+				52560F6028D88D9300D40CCC /* LinearProgressBar.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -551,11 +571,14 @@
 				52560F5B28D4A1B500D40CCC /* CurrentTestViewModel.swift in Sources */,
 				52E7804628CF2567008F7BFB /* NavigationBarTitleConfiguration.swift in Sources */,
 				52E7804528CF2567008F7BFB /* Navigation.swift in Sources */,
+				5286E82928DE422B00827747 /* TestResultViewModel.swift in Sources */,
 				52560F5D28D4A6F300D40CCC /* AnswerView.swift in Sources */,
+				5286E82728DE421D00827747 /* TestResultScreen.swift in Sources */,
 				526DE57A28BD5E6700C3CACC /* OnboardingScreen.swift in Sources */,
 				52560F5428D46A8400D40CCC /* Tour.swift in Sources */,
 				526DE57F28BE2BD300C3CACC /* Colors.swift in Sources */,
 				52DF4CDB28B9033200D16115 /* GuideIOS.xcdatamodeld in Sources */,
+				52560F5F28D8785A00D40CCC /* FakeQuestionsData.swift in Sources */,
 				52560F5628D46D3900D40CCC /* RoundedTextButton.swift in Sources */,
 				5235A1D328C5F5BB00052156 /* HomeScreen.swift in Sources */,
 				52E7804B28CF2567008F7BFB /* WindowReader.swift in Sources */,
@@ -574,6 +597,7 @@
 				52293CB228D31FE500595902 /* StringExt.swift in Sources */,
 				52E7804728CF2567008F7BFB /* UIViewController+Hierarchy.swift in Sources */,
 				52560F5928D4824000D40CCC /* CurrentTest.swift in Sources */,
+				52560F6128D88D9300D40CCC /* LinearProgressBar.swift in Sources */,
 				526DE57C28BE23BB00C3CACC /* SignInScreen.swift in Sources */,
 				526DE58328BE348400C3CACC /* SingInTextFieldStyle.swift in Sources */,
 				52E7804828CF2567008F7BFB /* View+Modifiers.swift in Sources */,
